@@ -6,7 +6,12 @@ class Post extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromARGB(255, 226, 231, 234),
+      width: 100,
+      height: 320,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30),
+        color: const Color.fromARGB(255, 229, 238, 250),
+      ),
       child: Column(
         children: [
           Row(
@@ -15,12 +20,19 @@ class Post extends StatelessWidget {
               Column(
                 children: [
                   Row(
-                    children: [Text("data")],
+                    children: [Text("alwaleed")],
                   ),
-                  Row(children: [Text("data")])
+                  Row(children: [
+                    Text("@wf_vip",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 142, 142, 142)))
+                  ])
                 ],
               ),
-              CircleAvatar(foregroundColor: Colors.blue)
+              CircleAvatar(
+                  foregroundColor: Colors.blue,
+                  foregroundImage: NetworkImage(
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslgwkTKgR0dOH12TG12pYUkfkPOttzsc3IA&usqp=CAU"))
             ],
           ) //imiges
           ,
@@ -28,8 +40,11 @@ class Post extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: Column(
               children: [
-                Image.network(
-                    "https://www.cairo24.com/UploadCache/libfiles/79/9/600x338o/661.jpg")
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image.network(
+                      "https://www.fay3.com/iLy6DrgJrfR/download"),
+                )
               ],
             ),
           )
