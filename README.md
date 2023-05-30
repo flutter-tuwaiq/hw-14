@@ -19,7 +19,7 @@ Assignment Details:
 <img width="395" src="https://github.com/flutter-tuwaiq/hw-14/assets/94795551/a595d3ae-211f-42d8-a2c3-2d7efd904351">
 
 # Note
-Uplaod screenshots of your app along with the code
+Upload screenshots of your app 
 
 # Deadline 
 31/05/2023 10:00 AM
