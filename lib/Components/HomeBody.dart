@@ -14,6 +14,9 @@ class HomeBody extends StatelessWidget {
       child: Column(
         children: [
           TopListView(),
+          SizedBox(height: 20),
+          ContentCard(),
+          SizedBox(height: 20),
           ContentCard(),
         ],
       ),
